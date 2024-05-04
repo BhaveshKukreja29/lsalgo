@@ -14,9 +14,9 @@ void main()
 
     for(i=0;i<k1;i++)
     {
-		if(min>a[i])
+	    if(min>a[i])
         {
-			min = a[i];
+	        min = a[i];
 		}
 
 		if(max<a[i])
