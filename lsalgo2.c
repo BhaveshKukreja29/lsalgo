@@ -33,18 +33,18 @@ int main(){
 			if(a[i]==n){
 				b[counter]=a[i];       //basically if you find the minimum at a[i] copy that in b[counter]
                 for(j=i;j<k1-1;j=j+1){
-                    a[j]=a[j+1];                        //this loop deletes the copied element from a[i] by shifting it's succeeding indexes one step behind
-                }
-                k1--;                                //to reduce to size of a[i] since we deleted an element
-                counter++;                           //points to the location for next element to be stored.
+                	a[j]=a[j+1];                        //this loop deletes the copied element from a[i] by shifting it's succeeding indexes one step behind
+            	}
+            	k1--;                                //to reduce to size of a[i] since we deleted an element
+            	counter++;                           //points to the location for next element to be stored.
 			}
 		}                                   //swapping logic ends
         min = a[0];
         for(j=0;j<k1;j++){
-		            if(min>a[j]){                  //to select the new minimum value for next iteration
-			            min = a[j];
-		            }
-        	    }
+			if(min>a[j]){                  //to select the new minimum value for next iteration
+	            min = a[j];
+			}
+        }
         if(k1==1){                        //k1==1 means only one element remains, added this because the loop didn't consider the last remaining element.
             b[counter]=a[0];
         }
@@ -52,8 +52,8 @@ int main(){
     }while(min!=max);
 
     printf("The Sorted Array is: \n");      
-	for(i=0;i<k2;i++){                 //prints the array b
+    for(i=0;i<k2;i++){                 //prints the array b
 		printf("%d ", b[i]);
-	}
+    }
 
 }
