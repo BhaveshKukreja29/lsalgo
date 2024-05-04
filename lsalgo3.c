@@ -15,45 +15,44 @@ void main()
     for(i=0;i<k1;i++)
     {
 		if(min>a[i])
-        {
+        	{
 			min = a[i];
 		}
 
 		if(max<a[i])
-        {
+        	{
 			max = a[i];
 		}
-	}
+}
 
     do{
         n=min;
 		for (i=0;i<k1;i++)
-        {
+        	{
 			if (a[i]==n)
-            {
+            		{
 
-                temp = a[counter];
+                		temp = a[counter];
 				a[counter]=a[i];
-                a[i] = temp;
+                		a[i] = temp;
                 
-                counter++;
+                		counter++;
 			}
 		}
         min = a[counter];
         for (j=counter;j<k1;j++)
-            {
+	{
 		        if (min>a[j])
-                {
+                	{
 			        min = a[j];
 		        }
-        	}
+        }
     }while(min != max);
 
 
     printf("The Sorted Array is: \n");
-	for (i=0;i<k1;i++)
+    for (i=0;i<k1;i++)
     {
 		printf("%d ", a[i]);
-	}
-
+    }
 }
