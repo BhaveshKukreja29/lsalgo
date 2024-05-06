@@ -12,6 +12,8 @@ void main()
     int counter = 0;
     int temp=0;
 
+
+	//the for loop below selects the minimum and maximum value of the array
     for(i=0;i<k1;i++)
     {
 	    if(min>a[i])
@@ -26,24 +28,24 @@ void main()
 	}
 
     do{
-        n=min;
-		for (i=0;i<k1;i++)
+        n=min;										//starting the sort with minimum value
+		for (i=0;i<k1;i++)							
     	{
 			if (a[i]==n)
             {
-		   		temp = a[counter];
+		   		temp = a[counter];					//swapping the minimum at it's designated place
 				a[counter]=a[i];
         		a[i] = temp;
                                 		
 				counter++;
 			}
 		}
-        min = a[counter];
-        for (j=counter;j<k1;j++)
+        min = a[counter];							// a[counter] to avoid having the same minimum value again and going in an infinite loop
+        for (j=counter;j<k1;j++)					//j = counter to ignore the already sorted part of array
 		{
 	        if (min>a[j])
 			{
-				min = a[j];
+				min = a[j];							// new minimum value found
 		    }
         }
     }while(min != max);
