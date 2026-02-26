@@ -15,7 +15,7 @@ I had a direction, I wanted to use Linear Search to improve it. That's why the n
 
 It took 7-8 iterations (not all of them are in this repo) for me to come up with lsalgo4.c
 
-And as you may have noticed, it is selection sort. While nothing impressive or crazy, I was happy that I was able to come up with it myself without any help. 
+And as you may have noticed, lsalgo4.c is basically selection sort. While nothing impressive or crazy, I was happy that I was able to come up with it myself without any help. 
 
 
 ## Takeaway
